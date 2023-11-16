@@ -1,3 +1,4 @@
+import { faker } from '@faker-js/faker';
 import React from 'react';
 
 class Nav extends React.Component {
@@ -25,7 +26,7 @@ class Nav extends React.Component {
                                 Create
                             </label>
                             <div className="profile-photo">
-                                <img src="images/profile-1.jpg" />
+                                <img src={faker.image.avatar()} />
                             </div>
                             {/* menu button to show sidebar */}
                             <button id="menu-btn">
